@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url("img1.jpg");
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-size: cover;
+    background-position: center; */
+    color: rgb(168, 33, 33);
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px 10%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 40px;
+    color: rgb(170, 196, 27);
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    font-size: 18px;
+    color: beige;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: .3s;
+}
+.navbar a:hover,
+.navbar a.active{
+    color:aquamarine
+}
+.home{
+    background-image: url("img1.jpg");
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    padding:0 10%;
+}
+.content{
+    max-width: 600px;
+}
+.content h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: rgb(194, 148, 21);
+    line-height:1.2 ;
+}
+.content h3{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(224, 134, 16);   
+}
+.content p{
+    margin:20px 0 40px;
+}
+.content .box{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:135px;
+    height: 80%;
+    border: 1px solid black;;
+    border-radius: 9px;
+    font-size: 20px;
+    color:rgb(102, 14, 161);
+    text-decoration: none;
+    letter-spacing: 1px;
+    z-index:1;
+    overflow:hidden;
+    transition: .5s;
+}
+.box a:nth-child(2){
+    background: transparent;
+    color:rgb(102, 14, 161) ;
+}
+.box a::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    background: #07b332;
+    transition: .5s;
+
+}
+.box a:hover::before{
+    width: 100%;
+}
+.home1{
+    background-image: url("img3.jpg");
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    display:flex;
+    align-items: center;
+    padding:0 10%;
+}
+.home1{
+    max-width: 100%;
+    max-height: 100%;
+}
+.home1 h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: rgb(18, 21, 209);
+    line-height:1.2 ;
+}
+.home1 h4{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(199, 30, 176);   
+}
+.home1 p{
+    margin:20px 0 40px;
+}
+.box2{
+    background-image: url("img4.jpg");
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display:grid;
+    grid-gap: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    grid-template-columns: auto auto auto;
+}
+.class h1{
+    font-size: 56px;
+    font-weight: 600;
+    color: rgb(22, 206, 212);
+    line-height:1.2 ;
+    padding:0px 60vh;
+}
+.item1,.item2,.item3{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 35vh;
+    height: 30vh;
+    border: 2px solid black;
+    line-height: 1;
+}
+.box2 h3{
+    color: blue;
+}
+.box2 h5{
+    color: rgb(216, 90, 7);
+}
+.sub3{
+    background-image: url("img2.jpg");
+    background-attachment:fixed;
+    background-size:100% 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding:0 10%;
+    column-gap: 30px;
+}
+.class1{
+    font-size: 25px;
+   color: rgb(177, 79, 14);
+}
+.class2 a{
+    font-size: 25px;
+    color: rgb(82, 17, 187);
+    text-decoration: none;
+    line-height: 1.5;
+}
